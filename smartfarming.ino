@@ -10,13 +10,14 @@ Serial.begin(9600);
 
 void loop() {
 val = analogRead(A0);
-if(val ==LOW)
+  val=map(val,550,10,0,100);
+if(val <0)
 {
-  digitalWrite(13,LOW); 
+  digitalWrite(13,HIGH); 
 }
 else
 {
-digitalWrite(13,HIGH); 
+digitalWrite(13,LOW); 
 }
 delay(400);
 }
