@@ -12,11 +12,11 @@ void loop() {
 val = analogRead(A0);
 if(val ==LOW)
 {
-  analogWrite(13,LOW); 
+  digitalWrite(13,LOW); 
 }
 else
 {
-analogWrite(13,HIGH); 
+digitalWrite(13,HIGH); 
 }
 delay(400);
 }
